@@ -1,0 +1,91 @@
+:root {
+    --link-highlight: #f0ac25;
+}
+
+body {
+    background: #333;
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+    margin: 0;
+}
+
+.main-cont {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+nav {
+    background-color: #333;
+    color: #f7f7f7;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    font-size: 1.4rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.lower-menu {
+    justify-content: flex-end;
+}
+
+.dash-main {
+    background: #f7f7f7;
+    display: grid;
+    grid-template-rows: minmax(150px, 1fr) 4fr;
+    grid-template-columns: 1fr;
+}
+
+.top-panel {
+    background: #ffffff;
+    filter: drop-shadow(0 2px 2px #33333333);
+}
+
+.bottom-panel {
+    background: #cdcdcd;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(2);
+    filter: invert(42%) sepia(93%) saturate(1352%) grayscale(1) brightness(119%) contrast(119%);
+
+}
+
+nav ul li a:hover {
+    color: var(--link-highlight);
+}
+
+nav ul li a:hover img {
+    color: var(--link-highlight);
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(180deg) grayscale(0.5) brightness(150%) contrast(119%);
+}
+
+
+
