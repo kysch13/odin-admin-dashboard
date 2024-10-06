@@ -33,6 +33,10 @@ ul {
 
 /* MENU */
 
+.logo  img {
+    width: 100%;
+}
+
 nav {
     background-color: #333;
     color: #f7f7f7;
@@ -224,7 +228,7 @@ a#notify-bell:hover {
     padding: 20px;
     border-radius: 10px;
     background: #ffffff;
-    filter: drop-shadow(0 1px 1px #333333);
+    filter: drop-shadow(0 1px 1px #33333377);
 }
 
 .card h3 {
@@ -248,4 +252,45 @@ a#notify-bell:hover {
 
 .card-actions a:hover img {
     filter: invert(85%) sepia(47%) saturate(3104%) hue-rotate(341deg) brightness(98%) contrast(93%);
+}
+
+.announcements-card > div:not(:last-child) {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+}
+
+.cards-sidebar > div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.trending-card {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    gap: 20px;
+}
+
+.trending-item {
+    display: grid;
+    grid-template: 1fr / 60px 1fr;
+    gap: 10px;
+}
+
+.trending-item img {
+    width: 100%;
+    border-radius: 50px;
+    aspect-ratio: 1;
+}
+
+.trending-item span {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.trending-item > div {
+    align-self: center;
+}
+
+.trending-item > div > span:last-of-type {
+    font-size: 18px;
 }
